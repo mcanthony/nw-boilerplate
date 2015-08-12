@@ -1,0 +1,57 @@
+{
+  "name": "nw-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerplate for nw.js projects",
+  "scripts": {
+    "start": "nw app"
+  },
+  "keywords": [
+    "nw.js",
+    "boilerplate"
+  ],
+  "author": "Marcel Siewert <bitkomponist@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^11.0.1",
+    "gulp": "^3.9.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.6",
+    "node-lessify": "0.0.10",
+    "nw": "^0.12.3",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "paths": {
+    "src": "src",
+    "application": "app",
+    "dist": "dist",
+    "maps": "maps",
+    "bundle": "bundle.js",
+    "entries": "src/app.jsx"
+  },
+  "browserify": {
+    "external": [
+      "fs",
+      "path",
+      "nw",
+      "nw.gui"
+    ],
+    "transform": [
+      [
+        "reactify",
+        {
+          "es6": true
+        }
+      ],
+      [
+        "node-lessify",
+        {
+
+        }
+      ]
+    ]
+  }
+}

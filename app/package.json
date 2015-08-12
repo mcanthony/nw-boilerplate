@@ -1,0 +1,14 @@
+{
+  "name": "ProjectName",
+  "version": "0.0.0",
+  "main": "index.html",
+  "window": {
+    "frame": true,
+    "width": 900,
+    "height": 700,
+    "toolbar": true,
+    "position": "center",
+    "resizable": true
+  },
+  "dependencies": {}
+}
